@@ -5,7 +5,6 @@ from firebase_admin import credentials, firestore
 
 cred = credentials.Certificate('...JSON HERE...')
 firebase_admin.initialize_app(cred)
-db_document = firestore.client()
 
 class DOCHelper:
     def __init__(self, collection_name):
